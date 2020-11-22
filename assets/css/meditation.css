@@ -1,0 +1,153 @@
+body {
+    background-color: #D2D5C4;
+}
+
+#home {
+    width: 157px;
+    height: 57px;
+    background-color: white;
+    border-radius: 28.5px;
+
+    margin-left: 10px;
+}
+
+#home a {
+    text-decoration: none;
+}
+
+#home p {
+    font-family: "Noto sans";
+    font-size: 36px;
+    color: #839A90;
+    text-align: center;
+    vertical-align: center;
+}
+
+#cloud {
+    position: absolute;
+    display: inline-flex;
+    align-items: flex-start;
+
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cloud {
+    width: 263px;
+
+    z-index: 1;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        margin-left: -80px;
+    }
+    21%, 58% {
+        margin-left: 200px;
+    }
+    100% {
+        margin-left: -80px;
+    }
+}
+
+#dark {
+    margin-left: -80px;
+    animation-name: moveLeftRight;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
+}
+
+#light {
+    margin-right: -80px;
+}
+
+#sun {
+    background-color: #F3E6B2;
+    border-radius: 100%;
+    width: 137px;
+    height: 137px;
+
+    position: absolute;
+    left: 50%;
+    top: -15%;
+    transform: translateX(-50%);
+
+    z-index: 0;
+}
+
+#text {
+    font-family: "Noto sans";
+    font-size: 64px;
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+
+    display: flex;
+}
+
+@keyframes fadeInOutInhale {
+    0% {
+        opacity: 0%;
+    }
+    18% {
+        opacity: 100%
+    }
+    20%, 100% {
+        opacity: 0%;
+    }
+}
+
+#inhale-text {
+    animation-name: fadeInOutInhale;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeInOutHold {
+    0%, 20% {
+        opacity: 0%;
+    }
+    38%, 56% {
+        opacity: 100%;
+    }
+    58%, 100% {
+        opacity: 0%;
+    }
+}
+
+#hold-text {
+    animation-name: fadeInOutHold;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeInOutExhale {
+    0%, 58% {
+        opacity: 0%;
+    }
+
+    76%, 98% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+#exhale-text {
+    animation-name: fadeInOutExhale;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
+}
+
+.hidden {
+    display: none;
+}

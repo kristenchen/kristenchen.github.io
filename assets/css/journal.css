@@ -1,0 +1,43 @@
+body {
+    background-color:#FEFCFB;
+}
+
+#home {
+    width: 157px;
+    height: 57px;
+    background-color: #839A90;
+    border-radius: 28.5px;
+
+    margin-left: 10px;
+}
+
+#home a {
+    text-decoration: none;
+}
+
+#home p {
+    font-family: "Noto sans";
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+}
+
+#page {
+    background-color: #839A90;
+    width: 540px;
+    height: 640px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+}
+
+#credits {
+    position: relative;
+    font-family: "Noto sans";
+    font-size: 30px;
+    color: white;
+    padding: 30px;
+}

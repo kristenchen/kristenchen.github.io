@@ -1,0 +1,138 @@
+body {
+    background-color: #BDD2E4;
+}
+
+header {
+    position: relative;
+    font-family: "Noto sans";
+    color: #676B70;
+    text-align: center;
+}
+
+#title {
+    font-weight: normal;
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+#description {
+    font-weight: lighter;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+#window {
+    background-color: #FEFEFF;
+    width: 339px;
+    height: 296px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-100%);
+}
+
+#row1 {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.glass {
+    background-color: #E5EFF7;
+    width: 154px;
+    height: 134px;
+}
+
+#meditation {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sun {
+    width: 51px;
+    height: 51px;
+
+    background: #F3E272;
+    border-radius: 100%;
+
+    position: relative;
+    top: 7%;
+    left: 7%;
+}
+
+#moon {
+    position: relative;
+
+    top: 7%;
+    left: 7%;
+}
+
+#shows {
+    width: 51px;
+    height: 51px;
+
+    background: #F3E6B2;
+    border-radius: 100%;
+
+}
+
+#overlap {
+    width: 51px;
+    height: 51px;
+
+    background:#60717F;
+    border-radius: 100%;
+
+    position: absolute;
+    top: -18%;
+    left: 9%;
+}
+
+#stack {
+    position: relative;
+    width: 138px;
+    left: 65%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tea-light, #tea-dark {
+    position: relative;
+}
+
+#journal {
+    position: relative;
+    left: -0.5%;
+}
+
+.bottom-text {
+    font-family: "Noto sans";
+    font-size: 30px;
+    color: #676B70;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
